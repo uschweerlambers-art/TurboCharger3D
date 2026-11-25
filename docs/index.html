@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Turbo Charger · Interactive Product Experience</title>
+<style>
+  @font-face { font-family: "Inter"; src: url("praesentation/fonts/inter-var.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+  :root { color-scheme: dark; --gap: clamp(16px, 3vw, 40px); }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: #000; color: #f5f5f7;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: var(--gap); min-height: 100svh; }
+  header, footer { width: var(--w); display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
+  :root { --w: min(calc(100vw - 2 * var(--gap)), calc((100svh - 2 * var(--gap) - 92px) * 16 / 9)); }
+  h1 { margin: 0; font-size: 17px; font-weight: 600; letter-spacing: -0.02em; }
+  h1 span { color: rgba(235,235,245,.6); font-weight: 400; }
+  a { color: rgba(235,235,245,.75); text-decoration: none; font-size: 13px; padding: 6px 12px; border-radius: 99px;
+    border: 1px solid rgba(255,255,255,.16); background: rgba(255,255,255,.05); transition: background .2s, color .2s; white-space: nowrap; }
+  a:hover { color: #fff; background: rgba(255,255,255,.12); }
+  .frame { position: relative; width: var(--w); aspect-ratio: 16 / 9; border-radius: 18px; overflow: hidden; background: #000;
+    box-shadow: 0 0 0 1px rgba(255,255,255,.1), 0 30px 80px rgba(0,0,0,.6); }
+  .frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  footer { font-size: 12px; color: rgba(235,235,245,.42); }
+  @media (max-width: 560px) { h1 span { display: none; } }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Turbo Charger <span>· Interactive Product Experience</span></h1>
+    <a href="praesentation/index.html" target="_blank" rel="noopener">Eigenes Fenster ↗</a>
+  </header>
+  <div class="frame">
+    <iframe src="praesentation/index.html" title="Turbo Charger – Interactive Product Experience"
+            allow="fullscreen; autoplay" allowfullscreen></iframe>
+  </div>
+  <footer>
+    <span>Am besten in aktuellem Chrome oder Edge (WebGPU).</span>
+    <span>Equiloud · Uwe Schweer-Lambers</span>
+  </footer>
+</body>
+</html>
